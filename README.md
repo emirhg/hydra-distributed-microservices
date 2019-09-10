@@ -87,4 +87,18 @@ Si Hydra router se encuntra en ejecución, será posible acceder al microservici
 
 
 ## Hydra-cli ( opcional )
+Conjunto de utilerias para monitorear los servicios en ejecución
 
+Instalación
+```
+sudo npm install -g hydra-cli
+```
+
+Hydra no elimina las instancias detenidas por razones de debug, para realizar una limpieza de las mismas se debe actualizar los estados de los microservicios.
+```
+hydra-cli refresh
+```
+
+# Para más documentación sobre Hydra
+
+https://www.hydramicroservice.com/
