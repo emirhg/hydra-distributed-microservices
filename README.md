@@ -49,3 +49,42 @@ npm start
 ### Demo
 
 Abrir un navegador en la ruta `http://host:port` remplazando host y port por los definidos en `config.json`
+
+## Hello world
+
+### Prerequisitos
+Para facilitar la generación del código base de un microservicio es necesario contar con Yeoman y el respectivo generador de Hydra
+
+```
+sudo npm install -g yo generator-fwsp-hydra
+```
+
+### Generación de código base
+El generador es un comando iteractivo que después de responder algunas preguntas generará el proyecto correspondiente
+
+```
+yo fwsp-hydra
+```
+
+Ejecutar instancia
+```
+cd example
+npm install
+npm start
+```
+
+### TL;DR Demo
+Se probar el microservicio "hello-world" sin tener que crear un proyecto desde cero
+
+```
+git clone git@github.com:emirhg/hydra-microservice-hello-world.git
+cd hydra-microservice-hello-world
+npm install
+npm start
+```
+
+Si Hydra router se encuntra en ejecución, será posible acceder al microservicio mediante la ruta http://host:port/hello-world-service/v1/hello-world de lo contrario, por omisión el microservicio eligirá un puerto al azar el cuál es reportado en la consola al momento de ejcución y la ruta del microservicio será http://serviceIp:servicePort/v1/hello-world
+
+
+## Hydra-cli ( opcional )
+
