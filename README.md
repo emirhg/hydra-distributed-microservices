@@ -77,7 +77,7 @@ npm start
 Se probar el microservicio "hello-world" sin tener que crear un proyecto desde cero
 
 ```
-git clone git@github.com:emirhg/hydra-microservice-hello-world.git
+git clone https://github.com/emirhg/hydra-microservice-hello-world.git
 cd hydra-microservice-hello-world
 npm install
 npm start
